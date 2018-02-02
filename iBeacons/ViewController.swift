@@ -77,7 +77,6 @@ class ViewController: UITableViewController, CLLocationManagerDelegate, UNUserNo
 	func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
 		locationManager.startRangingBeacons(in: beaconRegion)
 		print("didEnter")
-//		postNotification()
 		
 		tableView.reloadData()
 	}
